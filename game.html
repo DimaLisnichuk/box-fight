@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="img/logo.png">
+    <title>Box Fight</title>
+    <link rel="stylesheet" href="./css/game-style.css">
+</head>
+<body>
+    <div id="timerContainer">
+        <div id="timer">60</div>
+    </div>
+    <div id="winner"></div>
+    <div id="winCounters">
+        <div id="playerOneWins" class="winCounter"></div>
+        <div id="playerTwoWins" class="winCounter"></div>
+    </div>
+    <div id="end-game" style="display: none;">
+        <p>Час закінчився!</p>
+        <p id="final-winner"></p>
+        <div class="end-button-conteiner">
+            <button class="end-button" id="reset-button">Грати ще раз</button>
+            <button class="end-button" id="exit-button">Вийти</button>
+        </div>
+    </div>
+    <canvas id="canvas"></canvas>
+    <script src="./js/main.js"></script>
+</body>
+</html>

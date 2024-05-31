@@ -1,0 +1,94 @@
+html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden;
+    background-size: 90%;
+    background: linear-gradient(#03353D 2%, #05262D 98%);
+    font-family: Arial, sans-serif;
+}
+
+canvas {
+    display: block;
+    margin: 0 auto;
+}
+
+#timerContainer {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 1px;
+    font-weight: bold;    
+}
+
+#timer {
+    font-size: 30px;
+    color: black;
+}
+
+#winner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 24px;
+    display: none; 
+}
+
+#end-game {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 24px;
+    display: none;   
+    text-align: center; 
+    border: 2px solid #fff;
+}
+
+.end-button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #085868;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#exit-button {
+    background-color: #BF3F3F;
+    
+}
+
+#winCounters {
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+.winCounter {
+    display: flex;
+    gap: 10px;
+}
+
+.winCounter span {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+}
